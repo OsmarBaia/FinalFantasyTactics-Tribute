@@ -6,38 +6,78 @@
     <link rel="stylesheet" href="./output.css">
     <title>FFT - Final Fantasy Tactics</title>
 </head>
-<body class="size-ful box-border bg-baltic-sea">
-<header class="w-full h-auto bg-submarine flex flex-col-reverse flex-wrap justify-between items-center p-3 sm:flex-row-reverse">
-
+<body class="size-ful box-border bg-submarine flex flex-col items-center">
+<header class="w-full max-w-5xl h-auto bg-submarine flex flex-col-reverse flex-wrap justify-between items-center p-3 sm:flex-row-reverse">
     <nav class="inline-block pb-3 sm:pb-0">
         <ul class="flex flex-row justify-center space-x-3 sm:justify-end 2xl:space-x-6">
             <li class="inline-block">
-                <a class=" font-bold text-leather 2xl:text-3xl hover:text-spice" href="#about">Intro</a>
+                <a class=" font-bold text-leather  xl:text-xl hover:text-spice" href="#about">Intro</a>
             </li>
             <li class="inline-block">
-                <a class=" font-bold text-leather 2xl:text-3xl hover:text-spice" href="#story">Story</a>
+                <a class=" font-bold text-leather  xl:text-xl hover:text-spice" href="#story">Story</a>
             </li>
             <li class="inline-block">
-                <a class=" font-bold text-leather 2xl:text-3xl hover:text-spice" href="#gameplay">GamePlay</a>
+                <a class=" font-bold text-leather xl:text-xl  hover:text-spice" href="#gameplay">GamePlay</a>
             </li>
         </ul>
     </nav>
     <div class="inline-block flex flex-row items-center">
         <img class="w-58 h-auto sm:w-16 2xl:w-auto 2xl:h-24" src="../src/assets/img/Logo.png" alt="final fantasy tactics logo" >
-        <h1 class="font-bold text-2xl text-leather hidden sm:inline-block p-1 2xl:text-4xl">Final Fantasy Tactics</h1>
+        <h1 class="font-bold text-2xl text-leather hidden p-1 sm:inline-block xl:text-3xl">Final Fantasy Tactics</h1>
     </div>
 </header>
-<div>
-    <section id="about">
+<main class="flex flex-col items-center md:gap-5 md:px-5">
+    <section id="about" class="max-w-5xl" >
+        <div class="relative">
+            <img class="md:hidden" src="../src/assets/img/bg-sm.jpg" alt="Final fantasy banner with main characters in it" />
+            <img class="hidden md:block md:rounded-2xl md:shadow-lg xl:shadow-baltic-sea" src="../src/assets/img/bg-xl.jpg" alt="Final fantasy banner with main characters in it" />
 
-    </section>
-    <section id="story">
+            <div class="static bg-submarine p-2 md:bg-transparent md:absolute md:top-0 md:left-0 md:w-3/5">
+                <h2 class="font-bold text-leather p-1 xl:text-2xl">Sobre o jogo</h2>
+                <p class="text-baltic-sea p-1 indent-1 xl:text-xl">
+                    Final Fantasy Tactics: The War of the Lions é um jogo de estratégia em turnos desenvolvido e publicado pela Square Enix, originalmente disponível apenas para o PlayStation Portable (PSP) posteriormente adaptado para telefones celulares e dispositivos tablet.
+                </p>
+                <p class="text-baltic-sea p-1 indent-1 xl:text-xl">
+                    O jogo é uma versão atualizada do Final Fantasy Tactics original lançado em 1997 para o PlayStation com novas cenas de animação, a capacidade para multijogador, adaptação de entrada de comandos,  e outras características.
+                </p>
 
+                <div class="flex flex-row justify-center space-x-3 items-center p-1 mt-2">
+                    <a class="w-12" href="">
+                        <img src="../src/assets/img/store-psn.png" alt="playstation store icon">
+                    </a>
+                    <a class="w-12 h-auto">
+                        <img src="../src/assets/img/store-google.png" alt="google store icon">
+                    </a>
+                    <a class="w-10">
+                        <img src="../src/assets/img/store-apple.png" alt="apple store icon">
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="gameplay">
+    <section id="story" class="max-w-5xl bg-leather p-2 flex flex-col md:flex-row-reverse md:itens-start md:justify-center md:rounded-2xl md:shadow-lg md:shadow-baltic-sea">
+        <div class="md:w-3/5 m-2">
+            <h2 class="font-bold text-baltic-sea xl:text-2xl" >História</h2>
+            <p class="indent-1 p-1 text-baltic-sea xl:text-xl">
+                O jogo se passa em Ivalice, um reino unificado de sete territórios, que é pego no meio da Guerra dos Leões travada entre duas facções opostas que disputam o domínio do reino. A história se concentra em Ramza Beoulve , um membro da respeitada Casa Beoulve, que se vê preso em meio à guerra e depois descobre a verdade por trás de uma trama sinistra por trás dela.
+            </p>
+        </div>
+        <img class="w-58 h-auto mt-2 md:w-2/5" src="./assets/img/fft-worl-map.webp" alt="Ivalice world map">
+    </section>
 
+    <section id="gameplay" class="max-w-5xl bg-submarine p-2 flex flex-col md:flex-row md:itens-start md:justify-center md:rounded-2xl md:shadow-lg md:shadow-baltic-sea">
+        <div class="md:w-3/5 m-2">
+            <h2 class="font-bold text-leather xl:text-2xl">GamePlay</h2>
+            <p class="indent-1 p-1 xl:text-xl">
+                Final Fantasy Tactics apresenta batalhas travadas em um mapa dividido em uma grade na qual as unidades podem se mover.
+            </p>
+            <p class="indent-1 p-1 xl:text-xl">
+                A ordem dos termos das unidades é determinada por um sistema do tipo “Tempo Ativo”, e as ações só podem ser executadas dentro de um intervalo da posição das unidades. Cada unidade tem uma classe de trabalho que fornece habilidades, mas também pode equipar habilidades de outros trabalhos que subiram de nível ou dominaram.
+            </p>
+        </div>
+        <img class="w-58 h-auto mt-2 md:w-2/5" src="./assets/img/fft_mechanics-2.jpg" alt="image showing moving e battle mechanics over a battle encounter map">
     </section>
-</div>
+</main>
 <footer>
 
 </footer>

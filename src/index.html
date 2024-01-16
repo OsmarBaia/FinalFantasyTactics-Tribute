@@ -42,13 +42,13 @@
                 </p>
 
                 <div class="flex flex-row justify-center space-x-3 items-center p-1 mt-2">
-                    <a class="w-12" href="">
+                    <a href="https://www.square-enix-games.com/pt_BR/home" class="w-12">
                         <img src="../src/assets/img/store-psn.png" alt="playstation store icon">
                     </a>
-                    <a class="w-12 h-auto">
+                    <a href="https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.FFT_en2&hl=en" class="w-12 h-auto">
                         <img src="../src/assets/img/store-google.png" alt="google store icon">
                     </a>
-                    <a class="w-10">
+                    <a href="https://apps.apple.com/br/app/final-fantasy-tactics-wotl/id446760220" class="w-10">
                         <img src="../src/assets/img/store-apple.png" alt="apple store icon">
                     </a>
                 </div>
@@ -78,8 +78,62 @@
         <img class="w-58 h-auto mt-2 md:w-2/5" src="./assets/img/fft_mechanics-2.jpg" alt="image showing moving e battle mechanics over a battle encounter map">
     </section>
 </main>
-<footer>
+<footer class="w-full p-2 flex flex-col items-center">
+    <div class="w-full max-w-5xl flex flex-col justify-between items-center gap-2">
+        <hr class="w-4/5 h-px mt-4 bg-gray-300 border-0"/>
 
+        <div class="w-full px-2 mt-2 flex flex-col justify-between items-start md:flex-row md:gap-1">
+            <!--Form -->
+            <div class="max-w-80 px-2 flex flex-col items-start w-full space-y-2">
+                <div>
+                    <h3 class="font-semibold text-spice my-2">Newsletter</h3>
+                </div>
+                <div class="self-center w-full px-2">
+                    <form action="" class="w-full h-auto flex flex-col justify-center items-start gap-1">
+                        <label for="form-name" class="text-leather">Nome: </label>
+                        <input      class="w-full rounded-sm shadow-sm shadow-baltic-sea px-1" type="text" name="guestName" id="form-name" placeholder="Seu nome">
+                        <label for="form-email" class="text-leather">E-mail: </label>
+                        <input      class="w-full rounded-sm shadow-sm shadow-baltic-sea px-1" type="email" name="guestEmail" id="form-email" placeholder="Seu email">
+                        <!--                    <label for="form-tel" class="text-leather">Tel: </label>-->
+                        <!--                    <input      class="w-full rounded-sm shadow-sm shadow-baltic-sea px-1" type="number" name="guestTel" id="form-tel" placeholder="Seu Telefone (opcional)">-->
+                        <!--                    <label for="form-message" class="text-leather">Mensagem: </label>-->
+                        <!--                    <textarea   class="w-full rounded-sm shadow-sm shadow-baltic-sea px-1" name="guestMessage" id="form-message" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>-->
+                        <button  class="mt-2 self-center rounded-sm shadow-sm shadow-baltic-sea bg-slate-200 py-1 px-2 text-baltic-sea hover:opacity-75" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Digital Channels -->
+            <div class="max-w-80 px-2 my-2 flex flex-col items-start w-full md:w-1/3">
+                <h3 class="font-semibold text-spice">Acompanhe a Square Enix</h3>
+                <div class="w-full flex flex-row flex-wrap items-center justify-center">
+                    <a href="https://www.youtube.com/user/SQEXMembersNA">
+                        <img class="w-16" src="./assets/img/social-youtube.png" alt="icon Youtube">
+                    </a>
+                    <a href="https://www.instagram.com/squareenix/">
+                        <img class="w-16" src="./assets/img/social-instagram.png" alt="icon instagram">
+                    </a>
+                    <a href="https://twitter.com/SquareEnix">
+                        <img class="w-16" src="./assets/img/social-twitter.png" alt="icon Twitter or X">
+                    </a>
+                </div>
+
+            </div>
+            <!-- Address-->
+            <div class= "max-w-80 px-2 mb-2 flex flex-col items-start w-full md:w-1/3">
+                <h3 class="font-semibold text-spice my-2">Faça uma visita</h3>
+                <p>© SQUARE ENIX</p>
+                <p>
+                    Square Enix, Inc., 999 N. Pacific Coast Highway, 3rd Floor, El Segundo, CA 90245
+                </p>
+            </div>
+        </div>
+
+        <hr class="w-4/5 h-px border-0 mt-4 bg-gray-300"/>
+
+        <div class="p-2">
+            <p class="font-light text-gray-200">osmarBCnet@2024</p>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
